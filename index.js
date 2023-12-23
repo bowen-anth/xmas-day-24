@@ -20,9 +20,15 @@
 
 const blue = document.querySelectorAll('.blue')
 const red = document.querySelectorAll('.red')
+const green = document.querySelectorAll('.green')
+const yellow = document.querySelectorAll('.yellow')
+const purple = document.querySelectorAll('.purple')
 
 const blueArray = Array.from(blue)
 const redArray = Array.from(red)
+const greenArray = Array.from(green)
+const yellowArray = Array.from(yellow)
+const purpleArray = Array.from(purple)
 
 const blueLightsOn = () => {
     // forEach since don't need map with new array
@@ -52,6 +58,42 @@ const redLightsOff = () => {
     })
 }
 
+const greenLightsOn = () => {
+    greenArray.forEach(light => {
+        light.classList.add('lights-on')
+    })
+}
+
+const greenLightsOff = () => {
+    greenArray.forEach(light => {
+        light.classList.remove('lights-on')
+    })
+}
+
+const yellowLightsOn = () => {
+    yellowArray.forEach(light => {
+        light.classList.add('lights-on')
+    })
+}
+
+const yellowLightsOff = () => {
+    yellowArray.forEach(light => {
+        light.classList.remove('lights-on')
+    })
+}
+
+const purpleLightsOn = () => {
+    purpleArray.forEach(light => {
+        light.classList.add('lights-on')
+    })
+}
+
+const purpleLightsOff = () => {
+    purpleArray.forEach(light => {
+        light.classList.remove('lights-on')
+    })
+}
+
 setInterval(() => {
     blueLightsOn()
     redLightsOff()
@@ -61,3 +103,16 @@ setInterval(() => {
     blueLightsOff()
     redLightsOn()
 }, "1600")
+
+setInterval(() => {
+    greenLightsOn()
+    purpleLightsOff()
+    yellowLightsOn()
+}, "400")
+
+setInterval(() => {
+    greenLightsOff()
+    purpleLightsOn()
+    yellowLightsOff()
+}, "800")
+

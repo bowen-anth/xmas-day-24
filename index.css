@@ -52,6 +52,10 @@ img {
     top: 180px;
     left: 165px; 
 }
+.lights:nth-child(20) {
+    top: 200px;
+    left: 100px;
+}
 .lights:nth-child(7) {
     top: 230px;
     left: 50px; 
@@ -59,6 +63,10 @@ img {
 .lights:nth-child(8) {
     top: 223px;
     left: 175px; 
+}
+.lights:nth-child(19) {
+    top: 240px;
+    left: 120px;
 }
 .lights:nth-child(9) {
     top: 280px;
@@ -73,17 +81,45 @@ img {
     top: 150px;
     left: 120px;
 }
+.lights:nth-child(18) {
+    top: 170px;
+    left: 90px;
+}
 .lights:nth-child(12) {
     top: 200px;
-    left: 120px;
+    left: 160px;
+}
+.lights:nth-child(17) {
+    top: 230px;
+    left: 160px;
 }
 .lights:nth-child(13) {
     top: 250px;
-    left: 120px;
+    left: 150px;
+}
+.lights:nth-child(16) {
+    top: 270px;
+    left: 80px;
+}
+.lights:nth-child(21) {
+    top: 180px;
+    left: 140px;
 }
 .lights:nth-child(14) {
     top: 290px;
-    left: 120px;
+    left: 160px;
+}
+.lights:nth-child(15) {
+    top: 290px;
+    left: 100px;
+}
+.lights:nth-child(22) {
+    top: 300px;
+    left: 60px;
+}
+.lights:nth-child(23) {
+    top: 290px;
+    left: 80px;
 }
 
 .red {
@@ -93,6 +129,21 @@ img {
 
 .blue {
     background: radial-gradient(circle at 65% 15%, white 1px, aqua 30%, darkblue 60%, aqua 100%); 
+    filter: brightness(.8);
+}
+
+.green {
+    background: radial-gradient(circle at 65% 15%, white 1px, #4CAF50 30%, darkgreen 60%, aqua 100%); 
+    filter: brightness(.8);
+}
+
+.yellow {
+    background: radial-gradient(circle at 65% 15%, white 1px, yellow 30%, darkred 60%, aqua 100%); 
+    filter: brightness(.8);
+}
+
+.purple {
+    background: radial-gradient(circle at 65% 15%, white 1px, purple 30%, darkblue 60%, aqua 100%); 
     filter: brightness(.8);
 }
 
